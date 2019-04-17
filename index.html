@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+var cars ={"data":[{"name":"Ram"}, {"name":"Shyam"}, {"name":"Sita"}]};
+
+var i = 0;
+var len = 3;
+var text = "";
+
+for (; i < len; i++) {
+	
+   text += "<li>"+ cars['data'][i]['name'] +"</li>"
+    
+}
+
+//document.getElementById("mylist").innerHTML = text;
+
+</script>
+<script>
+//alert(text);
+$(document).ready(function(){
+	
+  $("#btn").click(function(){
+	   
+	$("#mylist").html(text);
+	  
+		  });
+});
+</script>
+</head>
+
+<body>
+
+<ul id = "mylist">
+
+	<li>Ram</li>
+	<li>Ram</li>
+	<li>Ram</li>
+	<li>Ram</li>
+
+</ul>
+<input type=submit id="btn" value="submit">
+
+</body>
+</html>
